@@ -99,3 +99,6 @@ pite.ind<-predt-predc
 mean(pite.ind)
 #[1] -6.689145	##On average, this person would be expected to lost 6.7% of their body weight with LookAHEAD intervention
 
+##CALCULATE CREDIBLE INTERVAL
+pite.ind.ci<-quantile(pite.ind, probs=c(0.2,0.8))
+
