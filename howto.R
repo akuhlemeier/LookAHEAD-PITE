@@ -1,10 +1,10 @@
 library(BART)
-load("C:/Users/aakuhlemeier/Documents/GitHub/LookAHEAD-PITE/LookAHEAD_trt.RData")
-load("C:/Users/aakuhlemeier/Documents/GitHub/LookAHEAD-PITE/LookAHEAD_ctl.RData")
-
+load(".../GitHub/LookAHEAD-PITE/LookAHEAD_trt.RData")
 load(".../GitHub/LookAHEAD-PITE/LookAHEAD_ctl.RData")
 
 ##CODEBOOK OF BASELINE PREDICTORS##
+#See LookAHEAD protocol: 
+#[LookAHEAD Research Group. 2012. "Protocol: Action for health in diabetes, LookAHEAD Clinical Trial. https://www.lookaheadtrial.org/]
 
 #VARIABLE			DESCRIPTION					RANGE
 #baselinewgt_kg	| baseline weight	(kg)			|   [58.00,182.65]
