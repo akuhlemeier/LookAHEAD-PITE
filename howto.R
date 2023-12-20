@@ -1,5 +1,7 @@
 library(BART)
-load(".../GitHub/LookAHEAD-PITE/LookAHEAD_trt.RData")
+load("C:/Users/aakuhlemeier/Documents/GitHub/LookAHEAD-PITE/LookAHEAD_trt.RData")
+load("C:/Users/aakuhlemeier/Documents/GitHub/LookAHEAD-PITE/LookAHEAD_ctl.RData")
+
 load(".../GitHub/LookAHEAD-PITE/LookAHEAD_ctl.RData")
 
 ##CODEBOOK OF BASELINE PREDICTORS##
@@ -97,8 +99,9 @@ predc<-predict(ctrees,t(matrix))
 ##CALCULATE PREDICTED INDIVIDUAL TREATMENT EFFECT (1000 trees?)
 pite.ind<-predt-predc
 mean(pite.ind)
-#[1] -6.689145	##On average, this person would be expected to lost 6.7% of their body weight with LookAHEAD intervention
+#[1] -9.106779	##On average, this person would be expected to lost 9.1% of their body weight with LookAHEAD intervention
 
 ##CALCULATE CREDIBLE INTERVAL
 pite.ind.ci<-quantile(pite.ind, probs=c(0.2,0.8))
-
+#       20%        80% 
+#-10.980817  -7.340483 #It is likely (60%) that this person would lose between 7.3% and 11% of their body weight with the LookAHEAD intervention 
