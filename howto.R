@@ -50,24 +50,24 @@ load(".../GitHub/LookAHEAD-PITE/LookAHEAD_ctl.RData")
 #**Beck Depression Inventory score does not include the question in the inventory about eating/weight
 
 ##ENTER VALUES FOR EACH VARIABLE
-baselinewgt_kg<-133.8
+baselinewgt_kg<-142.3
 female<-0
 raceth_black<-0 
 raceth_hisp<- 0
 raceth_other<-0
-age<-53 
+age<-58 
 lesshs<-0 
 hs<-0 
 morehs<-0 
 ba<-1 
 ma<-0
 docprof<-0
-unemployed<-0 
+unemployed<-1 
 divorced<-0 
 widowed<-0 
 nevmarr<-0 
-currsmoke<-0 
-pastsmoke<-1 
+currsmoke<-1 
+pastsmoke<-0 
 total_alcohol<-0 
 binge<-1
 avgabi<-1.243902 
